@@ -1,0 +1,6 @@
+body { font-family: Arial; max-width: 600px; margin: 20px auto; }
+.container { padding: 20px; }
+button { padding: 8px; margin: 5px; }
+#habitInput { padding: 8px; width: 200px; }
+ul { list-style: none; padding: 0; }
+li { margin: 5px 0; padding: 10px; background: #f0f0f0; }

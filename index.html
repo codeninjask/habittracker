@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Habits</h1>
+    <div id="loginSection">
+      <button onclick="signInWithGoogle()">Sign in with Google</button>
+    </div>
+    <div id="app" style="display:none">
+      <input type="text" id="habitInput" placeholder="Add a habit (e.g., Exercise)">
+      <button onclick="addHabit()">Add</button>
+      <ul id="habitList"></ul>
+    </div>
+  </div>
+  <!-- Add Firebase and your app.js -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = PASTE_YOUR_CONFIG_HERE; // Replace with your code from Step 2
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
